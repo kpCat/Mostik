@@ -1,0 +1,20 @@
+[
+  {
+    "Language": "ru",
+    "Title": "Русская речь",
+    "Id": "vosk-model-small-ru-0.22",
+    "Url": "https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip",
+    "Sha256": "961d5ff98a17f4aa6de69864d0aa71fa5bac682301d2b5d17a3f24c5c99a46d4",
+    "DownloadBytes": 46236750,
+    "MaxExtractedBytes": 268435456
+  },
+  {
+    "Language": "pl",
+    "Title": "Польская речь",
+    "Id": "vosk-model-small-pl-0.22",
+    "Url": "https://alphacephei.com/vosk/models/vosk-model-small-pl-0.22.zip",
+    "Sha256": "c4cd16498ea544f446f9e9a55cbd602b71cfe5a2b6f2b0834d81e1b6fce15f0d",
+    "DownloadBytes": 52979372,
+    "MaxExtractedBytes": 268435456
+  }
+]

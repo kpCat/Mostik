@@ -1,0 +1,6 @@
+{
+  "VoskVersion": "0.3.75",
+  "VoskAarUrl": "https://repo.maven.apache.org/maven2/com/alphacephei/vosk-android/0.3.75/vosk-android-0.3.75.aar",
+  "VoskSha256": "ab2f8b91ac8051561aa325546b35fed9a68b36b8121bac5c6fb927525c4adfad",
+  "AttributionZipUrl": "https://docs.cloud.google.com/static/translate/images/google-translate-attribution.zip"
+}

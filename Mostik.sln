@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mostik.Core", "src\Mostik.Core\Mostik.Core.csproj", "{09A75F1A-78F3-4379-86D4-EB7979F97C11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mostik.Android", "src\Mostik.Android\Mostik.Android.csproj", "{46D74C95-22E5-402E-951D-F6F8FE50C117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mostik.Core.Smoke", "tests\Mostik.Core.Smoke\Mostik.Core.Smoke.csproj", "{63B679A9-3480-44C7-965A-7CC49D7AAD01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09A75F1A-78F3-4379-86D4-EB7979F97C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09A75F1A-78F3-4379-86D4-EB7979F97C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09A75F1A-78F3-4379-86D4-EB7979F97C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09A75F1A-78F3-4379-86D4-EB7979F97C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D74C95-22E5-402E-951D-F6F8FE50C117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D74C95-22E5-402E-951D-F6F8FE50C117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D74C95-22E5-402E-951D-F6F8FE50C117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D74C95-22E5-402E-951D-F6F8FE50C117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B679A9-3480-44C7-965A-7CC49D7AAD01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B679A9-3480-44C7-965A-7CC49D7AAD01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B679A9-3480-44C7-965A-7CC49D7AAD01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B679A9-3480-44C7-965A-7CC49D7AAD01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-android</TargetFramework>
+    <SupportedOSPlatformVersion>26.0</SupportedOSPlatformVersion>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Mostik.Mobile</RootNamespace>
+    <ApplicationId>org.mostik.offline</ApplicationId>
+    <ApplicationTitle>Мостик</ApplicationTitle>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>0.1.0</ApplicationDisplayVersion>
+    <RuntimeIdentifier>android-arm64</RuntimeIdentifier>
+    <AndroidPackageFormats>apk</AndroidPackageFormats>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <RunAOTCompilation>false</RunAOTCompilation>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <!-- First-device build favours reliable bindings over size. Optimize only after acceptance. -->
+    <PublishTrimmed>false</PublishTrimmed>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidEnableProguard>false</AndroidEnableProguard>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Mostik.Core/Mostik.Core.csproj"/>
+    <PackageReference Include="Xamarin.Google.MLKit.Translate" Version="117.0.3.8"/>
+    <AndroidAsset Include="../../data/models.json" Link="models.json"/>
+    <AndroidAsset Include="../../docs/PRIVACY.md" Link="privacy.txt"/>
+    <AndroidAsset Include="../../docs/THIRD_PARTY.md" Link="third_party.txt"/>
+  </ItemGroup>
+  <Target Name="CheckPreparedAssets" BeforeTargets="PrepareForBuild" Condition="'$(DesignTimeBuild)' != 'true' and '$(SkipPreparedAssetsCheck)' != 'true'">
+    <Error Condition="!Exists('NativeLibs/arm64-v8a/libvosk.so')" Text="Run scripts/Get-BuildAssets.ps1 first: Android libvosk.so is missing."/>
+    <Error Condition="!Exists('Resources/drawable-nodpi/google_translate_badge.png')" Text="Run scripts/Get-BuildAssets.ps1 first: the official Google Translate attribution badge is missing."/>
+  </Target>
+</Project>
