@@ -63,7 +63,7 @@
 - APK: `artifacts/Mostik-0.1.0-debug.apk`.
 - Размер APK: 45 437 847 байт.
 - SHA-256 APK:
-  `736b80818607b327bea2cd132f5cb2d83aefd5c2ac6ab481c4ec9a09b3237ad7`.
+  `7a8f167dbbcb8d27399c78e66dc8c146a8aeeded3afb2eb7e1f6b5d2c9983359`.
 - Подпись: Android Debug, RSA 3072; certificate SHA-256
   `03a71927ed16c3c6e02ca534eb3c86aaab9211117ab75b7b840d1f5fb1490a1b`.
   `apksigner`: v2=true, v3=true; exit 0. `zipalign -P 16`: exit 0.

@@ -53,7 +53,7 @@ Core.Smoke и `SignAndroidPackage`. Core.Smoke: **38 PASS, 0 FAIL**. Испра�
 обработка нового TTS error callback и двойное включение собственного `libvosk.so`.
 
 Создан `artifacts/Mostik-0.1.0-debug.apk`, размер 45 437 847 байт, SHA-256:
-`736b80818607b327bea2cd132f5cb2d83aefd5c2ac6ab481c4ec9a09b3237ad7`.
+`7a8f167dbbcb8d27399c78e66dc8c146a8aeeded3afb2eb7e1f6b5d2c9983359`.
 `apksigner` подтвердил debug-подпись v2/v3, `zipalign` — корректное выравнивание.
 В APK нет повторяющихся ZIP entries; присутствуют только ARM64 `libvosk.so` и
 `libtranslate_jni.so`, каталог моделей, privacy/third-party assets и registrar-классы.
