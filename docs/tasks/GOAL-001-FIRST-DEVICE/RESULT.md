@@ -109,12 +109,17 @@
 
 ## Git / публикация
 
-- `origin`: `git@github.com:kpCat/Mostik.git` — SSH-форма указанного репозитория;
-  remote не менялся.
-- IMPLEMENTATION_COMMIT_SHA: PENDING.
-- PUSH_IMPLEMENTATION: PENDING.
-- REMOTE_MASTER_VERIFICATION: PENDING.
+- Исходный `origin` был `git@github.com:kpCat/Mostik.git`. Первая push-попытка, exit 1:
+  `git@github.com: Permission denied (publickey). fatal: Could not read from remote repository.`
+- `origin` изменён на явно указанный пользователем
+  `https://github.com/kpCat/Mostik.git`; пользовательские файлы и история не менялись.
+- IMPLEMENTATION_COMMIT_SHA:
+  `8d4af7a5738975072eab92d8e7c28765d3aed145`.
+- PUSH_IMPLEMENTATION: PASS, `git push -u origin master`, exit 0; без force.
+- REMOTE_MASTER_VERIFICATION: PASS. После push `git rev-parse HEAD` и
+  `git ls-remote origin refs/heads/master` вернули один SHA:
+  `8d4af7a5738975072eab92d8e7c28765d3aed145`.
 
-Точный SHA и результат push заполняются отдельным коротким attestation-коммитом: commit
-не может содержать собственный SHA или заранее доказать результат будущего push без
-самореференции. Force-push и переписывание истории не используются.
+Этот post-push раздел публикуется отдельным коротким attestation-коммитом: commit не
+может содержать собственный SHA или заранее доказать результат будущего push без
+самореференции. Force-push и переписывание истории не использовались.
